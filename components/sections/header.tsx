@@ -33,7 +33,7 @@ export function Header() {
     <header className="border-b border-gray-100 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <div className={`flex items-center ${isRTL ? "space-x-2 space-x-reverse" : "space-x-2"}`}>
+          <div className={`flex items-center gap-2`}>
             <div
               className="h-8 w-8 rounded-lg flex items-center justify-center text-white font-bold"
               style={{ backgroundColor: landingConfig.primaryColor }}

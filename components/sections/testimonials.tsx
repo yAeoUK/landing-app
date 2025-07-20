@@ -14,7 +14,7 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className={`text-center space-y-4 mb-16 ${isRTL ? "text-right" : ""}`}>
+        <div className={`text-center space-y-4 mb-16`}>
           <h2 className="text-4xl font-bold text-gray-900">{sectionTitles.testimonials}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">{sectionTitles.testimonialsSubtitle}</p>
         </div>
@@ -23,13 +23,13 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-0 shadow-sm">
               <CardContent className={`p-8 ${isRTL ? "text-right" : ""}`}>
-                <div className={`flex items-center mb-4 ${isRTL ? "justify-end" : "justify-start"}`}>
+                <div className={`flex items-center mb-4`}>
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed">"{testimonial.content}"</p>
-                <div className={`flex items-center ${isRTL ? "flex-row-reverse text-right" : ""}`}>
+                <div className={`flex items-center `}>
                   <Image
                     src={`/placeholder.svg?height=48&width=48&query=${encodeURIComponent(testimonial.avatar)}`}
                     alt={testimonial.name}

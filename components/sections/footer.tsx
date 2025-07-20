@@ -42,7 +42,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div
-              className={`flex items-center space-x-2 ${isRTL ? "space-x-reverse justify-end lg:justify-start" : ""}`}
+              className={`flex items-center gap-2`}
             >
               <div
                 className="h-10 w-10 rounded-lg flex items-center justify-center text-white font-bold"
@@ -53,7 +53,7 @@ export function Footer() {
               <span className="text-2xl font-bold">{landingConfig.appName}</span>
             </div>
             <p className="text-gray-300 text-lg leading-relaxed max-w-md">{landingConfig.description[language]}</p>
-            <div className={`flex flex-col sm:flex-row gap-4 ${isRTL ? "sm:flex-row-reverse" : ""}`}>
+            <div className={`flex flex-col sm:flex-row gap-4`}>
               <Button
                 onClick={() => handleStoreClick("ios")}
                 className="text-white"
@@ -79,21 +79,21 @@ export function Footer() {
             <div className="space-y-4">
               <button
                 onClick={() => handleContactClick("email")}
-                className={`flex items-center text-gray-300 hover:text-white transition-colors cursor-pointer ${isRTL ? "space-x-3 space-x-reverse flex-row-reverse" : "space-x-3"}`}
+                className={`flex items-center text-gray-300 hover:text-white transition-colors cursor-pointer gap-3`}
               >
                 <Mail className="h-5 w-5 text-gray-400" />
                 <span>{landingConfig.contact.email}</span>
               </button>
               <button
                 onClick={() => handleContactClick("phone")}
-                className={`flex items-center text-gray-300 hover:text-white transition-colors cursor-pointer ${isRTL ? "space-x-3 space-x-reverse flex-row-reverse" : "space-x-3"}`}
+                className={`flex items-center text-gray-300 hover:text-white transition-colors cursor-pointer gap-3`}
               >
                 <Phone className="h-5 w-5 text-gray-400" />
                 <span>{landingConfig.contact.phone}</span>
               </button>
               <button
                 onClick={() => handleContactClick("address")}
-                className={`flex items-start text-gray-300 hover:text-white transition-colors cursor-pointer ${isRTL ? "space-x-3 space-x-reverse flex-row-reverse" : "space-x-3"}`}
+                className={`flex items-start text-gray-300 hover:text-white transition-colors cursor-pointer gap-3`}
               >
                 <MapPin className="h-5 w-5 text-gray-400 mt-1" />
                 <span>{landingConfig.contact.address}</span>

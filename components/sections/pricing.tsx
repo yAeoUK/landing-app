@@ -14,7 +14,7 @@ export function Pricing() {
   return (
     <section id="pricing" className="py-20">
       <div className="container mx-auto px-4">
-        <div className={`text-center space-y-4 mb-16 ${isRTL ? "text-right" : ""}`}>
+        <div className={`text-center space-y-4 mb-16`}>
           <h2 className="text-4xl font-bold text-gray-900">{sectionTitles.pricing}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">{sectionTitles.pricingSubtitle}</p>
         </div>
@@ -43,7 +43,7 @@ export function Pricing() {
 
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className={`flex items-start ${isRTL ? "flex-row-reverse text-right" : ""}`}>
+                    <li key={featureIndex} className={`flex items-start ${isRTL ? "text-right" : ""}`}>
                       <Check
                         className={`h-5 w-5 mt-0.5 flex-shrink-0 ${isRTL ? "ml-3" : "mr-3"}`}
                         style={{ color: landingConfig.primaryColor }}

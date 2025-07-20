@@ -14,7 +14,7 @@ export function Team() {
   return (
     <section id="team" className="py-20">
       <div className="container mx-auto px-4">
-        <div className={`text-center space-y-4 mb-16 ${isRTL ? "text-right" : ""}`}>
+        <div className={`text-center space-y-4 mb-16`}>
           <h2 className="text-4xl font-bold text-gray-900">{sectionTitles.team}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">{sectionTitles.teamSubtitle}</p>
         </div>
@@ -35,7 +35,7 @@ export function Team() {
                   {member.role}
                 </p>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">{member.bio}</p>
-                <div className="flex justify-center space-x-3">
+                <div className="flex justify-center gap-3">
                   {member.social.linkedin && (
                     <a href={member.social.linkedin} className="text-gray-400 hover:text-blue-600 transition-colors">
                       <Linkedin className="h-5 w-5" />

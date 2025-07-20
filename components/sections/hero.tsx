@@ -30,7 +30,7 @@ export function Hero() {
               <p className="text-xl text-gray-600 leading-relaxed">{config.subtitle}</p>
             </div>
 
-            <div className={`flex flex-col sm:flex-row gap-4 ${isRTL ? "sm:flex-row-reverse" : ""}`}>
+            <div className={`flex flex-col sm:flex-row gap-4`}>
               <Button
                 size="lg"
                 onClick={() => handleStoreClick("ios")}
@@ -52,7 +52,7 @@ export function Hero() {
             </div>
 
             <div
-              className={`flex items-center space-x-6 text-sm text-gray-500 ${isRTL ? "space-x-reverse justify-end" : ""}`}
+              className={`flex items-center space-x-6 text-sm text-gray-500 `}
             >
               <div className="flex items-center">
                 <span className="font-semibold text-gray-900">500K+</span>
