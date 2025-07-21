@@ -24,7 +24,7 @@ export function Hero() {
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className={`grid lg:grid-cols-2 gap-12 items-center ${isRTL ? "" : ""}`}>
-          <div className={`space-y-8 ${isRTL ? "lg:order-2 text-right" : "lg:order-1"}`}>
+          <div className={`space-y-8 ${isRTL ? "text-right" : ""}`}>
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">{config.title}</h1>
               <p className="text-xl text-gray-600 leading-relaxed">{config.subtitle}</p>
@@ -66,7 +66,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className={`relative ${isRTL ? "lg:order-1" : "lg:order-2"}`}>
+          <div className={`relative`}>
             <Image
               src={`/placeholder.svg?height=600&width=400&query=${encodeURIComponent(landingConfig.heroImage)}`}
               alt="App Screenshot"
